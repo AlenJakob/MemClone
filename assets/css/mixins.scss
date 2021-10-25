@@ -1,0 +1,19 @@
+@import 'breakpoints.scss';
+
+@mixin mobile-up {
+  @media (min-width: $mq-mobile) {
+    @content;
+  }
+}
+
+@mixin tablet-up {
+  @media (min-width: $mq-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop-up {
+  @media (min-width: $mq-desktop) {
+    @content;
+  }
+}
